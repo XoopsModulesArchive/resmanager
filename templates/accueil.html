@@ -1,0 +1,90 @@
+<{* Menu utilisateur *}>
+
+<table>
+<tr>
+<td valign="top" >
+
+<table class="outer" >
+<tr> 
+  <td class="head">&nbsp;<{$contenu_page[0].title}></td>
+</tr>
+<tr>
+  <td class="even">
+    <ul>
+    <{section name=maligne loop=$contenu_page[0].lines}>
+    <li><{$contenu_page[0].lines[maligne]}></li>
+    <{/section}>
+    </ul>
+  </td>
+</tr>
+</table><br />
+
+</td>
+<td valign="top">
+
+<table class="outer" >
+<tr> 
+  <td class="head">&nbsp;<{$contenu_page[1].title}></td>
+</tr>
+<tr>
+  <td class="even">
+    <ul>
+    <{section name=maligne loop=$contenu_page[1].lines}>
+    <li><a href='edit_day.php?id_reserv=<{$contenu_page[1].lines[maligne].id_reserv}>&appel=make_dem.php!op:lstreserv,idcat:<{$contenu_page[1].lines[maligne].idcat_reserv}>' ><{$contenu_page[1].lines[maligne].nom_cat}> : <{$contenu_page[1].lines[maligne].nom_reserv}></a></li>
+    <{/section}>
+    <li><a href='make_dem.php?op=lstcat'><{$lang_suite}></a></li>
+    </ul>
+  </td>
+</tr>
+</table><br />
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top">
+
+<table  class="outer" >
+<tr> 
+  <td class="head">&nbsp;<{$contenu_page[2].title}></td>
+</tr>
+<tr>
+  <td class="even">
+    <ul>
+    <{section name=maligne loop=$contenu_page[2].lines}>
+    <li><a href='make_dem.php?op=detail&idcat=<{$contenu_page[2].lines[maligne].idcat_reserv}>&idres=<{$contenu_page[2].lines[maligne][0]}>' ><{$contenu_page[2].lines[maligne].nom_cat}> : <{$contenu_page[2].lines[maligne][1]}></a></li>
+    <{/section}>
+    <li><a href='make_dem.php?op=lstcat' ><{$lang_suite}></a></li>
+    </ul>
+  </td>
+</tr>
+</table><br />
+
+</td>
+<td valign="top">
+
+<table  class="outer" >
+<tr> 
+  <td class="head">&nbsp;<{$contenu_page[3].title}></td>
+</tr>
+<tr>
+  <td class="even">
+    <ul>
+    <{section name=maligne loop=$contenu_page[3].lines}>
+    <{if $contenu_page[3].lines[maligne].type_reserv eq $res_cal }>
+      <li><a href='edit_demcal.php?op=detail&appel=lst_dem.php&iddem=<{$contenu_page[3].lines[maligne].id_dem}>'><{$contenu_page[3].lines[maligne].id_dem}> : <{$contenu_page[3].lines[maligne].nom_reserv}> <{$contenu_page[3].lines[maligne].status_dem}></a</li>
+    <{else}>
+      <li><a href='edit_dem.php?op=detail&appel=lst_dem.php&iddem=<{$contenu_page[3].lines[maligne].id_dem}>'><{$contenu_page[3].lines[maligne].id_dem}> : <{$contenu_page[3].lines[maligne].nom_reserv}> <{$contenu_page[3].lines[maligne].status_dem}></a></li>
+    <{/if}>
+    <{/section}>
+    <li><a href='lst_dem.php'><{$lang_suite}></a></li>
+    </ul>
+</td>
+</tr>
+</table><br />
+
+</td>
+</tr>
+</table>
+

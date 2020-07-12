@@ -1,0 +1,76 @@
+1.2.1
+- Correction d'un bug affichage d'une date
+
+1.2
+- traduction en allemand terminée
+- traduction en itaien terminée
+- correction bug affichage popup
+- Horaires 0->23 au lieu de 1->24 car 24 correspond au lendemain
+- ResManagerSpecal => suppression des fonctions avec appel par référence
+- Traduction en anglais
+
+1.1
+- Nettoyage du code de messages inutiles
+- Correction traduction français
+- Début traduction italien et allemand ( Manque traduction des mails )
+
+1.0
+- feature : Ajout d'une image pour la catégorie/Add a image in the categorie.
+- feature 1848 : Saisie de descriptions évolués pour catégorie et réservations.
+- bug : nettoyage des images dans le répertoire.
+- bug : affichage d'une image dans la catégorie même si pas d'image.
+- feature 1849 : gestion des droits par catégorie.
+- feature 1852 : une demande annulée n'est pas supprimée mis le statut change.
+- feature : Modification affichage des sélections d'horaires enregistrées dans session.
+- feature : gestion catégorie et réservation dans l'administration.
+- bug 1209 : annulation d'une réservation.
+- Nouvelle page accueil du module.
+- feature 1851 : affichage du nombre total de places, réservées et dispo pour les res uniques.
+- feature 1012 : gestion de la notification.
+- Réservation multiple simplifiée.
+- feature 1753 : Ecran de mise à jour en masse.
+- feature 1011 : Ecran de mise à jour en masse.
+- feature 1155 : Ecran de mise à jour en masse.
+- feature 2156 : Ajout du menu préférence dans l'index de l'admin.
+
+0.5.2
+- bug 1531 : problème de menu
+- feature 1639 : affichage description dans liste catégorie et liste reservation
+- feature 1396 : suppression d'une réservation par admin
+- Ajouter dynamiquement des informations concernant une réservation simple ou calendrier
+- ajout du commentaire pour les réservations simples
+- la zone message refus est remplacé par une zone message utilisée à la fois en cas de refus
+et validation.
+- Afficher ou non les réservation d'une catégorie dans la liste des catégorie
+- feature 1622 : bloquer et débloquer pour toutes les réservations d'une catégorie
+
+0.5.1
+- minical dans la page edit_cay.php
+- déplacement de la sélection en haut de l'écran
+- bug 1083 : répertoire italiano renommé en italian
+- translation 992 : spanish
+- bug 1084 : erreur de traduction
+- bug 1085 : problème d'affichage du block. Comme trop d'informations remplacement par un lien
+qui ouvre une boite de dialogue.
+- bug 1150 : probleme connexion en anonyme avec un bloc accessible aux anonymes
+- Affichage paramétrable du bloc
+- choix de la catégorie dans le bloc
+- supression des autres blocs
+- feature 1009 : ajout d'une barre de navigation pour la liste des mouvements
+- bug : message erreur lorsque block dans toutes les pages
+- traduction en brésilien
+- feature 1112
+_ ajout d'informations dans la page index.php
+
+0.4
+- could define different open hour for each dy of the week
+- translate in italian
+- could write a description when you book
+- display the description in the calendar
+- add a link on the ok button in the edit_day.php page
+
+- définir des horaires ouvertures différents par jour
+- traduction en italien
+- saisie d'un commentaire lors de la réservation
+- affichage de la description dans les calendriers
+- ajout d'un lien sur le bouton ok dans la page edit_day.php
